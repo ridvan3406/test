@@ -1,12 +1,17 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 
 ol,
 ul {
   display: inline-block;
   padding-left: 30px;
+  margin-top: 8px;
+}
+.navbar{
+  margin-bottom: 0px;
 }
 
 .navbar-brand {
@@ -24,21 +29,27 @@ ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  
+  background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+  border: 3px solid rgb(192, 34, 139);
   float: left;
-  font-size: 24px;
+  font-size: 74px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 140px;
+  width: 140px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+
 }
 .square--winning {
-  background-color: yellow;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  
 }
 
 .square:focus {
@@ -54,26 +65,58 @@ ul {
   text-align: center;
 }
 .game-board {
-  margin-top: 20px;
-    height: 100px;
-    width: 100px;
-   display: inline-block;
+    margin-top: 20px;
 }
 .game-info {
   margin-left: 20px;
   
 }
 .status {
-  font-size: 40px;
+  font-size: 28px;
+  margin-top: 8px;
+  color: crimson;
 }
-.score {
-  font-size: 30px;
+.scoreboard{
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+  color:hsl(0, 0%, 4%);
+  font-size: 20px;
   margin-bottom: 10px;
 }
-.score-button {
-  font-size: 20px;
-  background-color: aqua;
+.play-again-btn{
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 24px;
+  border: 2;
+  width: 420px;
+  height: 60px;
+  font-weight: bolder;
+}
+.block{
+  display:grid;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 993px) {
+  .square {
+    height: 100px;
+    width: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+  
+  }
+  .play-again-btn{
+    width: 300px;
+    height: 50px;
+  }
 }
 
 .appContainer {
 }
+

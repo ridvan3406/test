@@ -49,12 +49,25 @@ Please answer the following questions:
 1. Comparing the app-original and app-standalone code bases. The app-standalone code base has put each component in a separate file and directory structure.   
    * Why do you think that was done, what are the advantages / disadvantages?
 
+   Modular system is being used in app-standalone in order to work efficiently. Modular system has plenty advantages in the process of production. I will write them some of them below.
+   1-	If you want to develop a website probably you will have different components to work on. For example if you want to assign someone for login page and not anything else you create a file that contains everything related to login page. At that time work can be easily done without distraction and complexity.
+   2-	Time is very important for everybody especially if you are a web developer. When you have something with your codes some times its hard to find the source of problem if you are working on a large project. Instead of looking thousands lines of code you can find easily detect the problem.
+   3-	Modular system help us to share code  and reuse the codes  in different part of our project and even on other projects.
+   4-	Testing is important while developing an application. Instead of testing the whole app each and every time we can test specific part of the app as much as its needed. We can write different version of code and test them whichever we like we can use them
+
+
 2. Thinking about a production ready app, what do you think is missing from all the examples? *Hint: the square component in the standalone app has one*
+   There is a testing file in Square file but not other files.
 
 3. Are you familiar with Redux? If so what is the basic idea behind it and what would be a good case for using it?
+   Yes I am familiar with Redux. Redux store all application data in a single state object. We call this object state. This state can only be changed dispatching an action to store. For that purpose we should write reducer function. These reducer functions must be pure function. 
+   Not all apps need Redux. It's important to understand the kind of application we are going to build or building. If your state is updated by the user frequently then it is time to use redux. Also if so many people are going to work on a large sized app then definitely redux should be used because you will use a lots of state during the process.
 
 4. *If you are interested in the full-stack role* Please take a look at the partial implementation of an express routes in backend/router.js.
     * Thinking of a production application, what issues do you see with this code? *List as many as you like* 
+      -When async function is used  try-catch should be used.
+      -Server file is not exist.
+
 
 ### Coding Challenges
 

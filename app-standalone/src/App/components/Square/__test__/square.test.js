@@ -10,6 +10,11 @@ describe('Square', () => {
         expect(wrapper.find('button').text()).toEqual('X');
     });
 
+    it('renders the props.value passed in ', () => {
+        const wrapper = shallow(<Square value='O'/>);
+        expect(wrapper.find('button').text()).toEqual('O');
+    });
+
     it('calls the click handler when the button is click', () => {
         const onClickHandler = jest.fn();
         const wrapper = shallow(<Square onClick={onClickHandler}/>);
